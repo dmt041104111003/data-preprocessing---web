@@ -1,0 +1,56 @@
+:root {
+    --default-font: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --heading-font: "Raleway", sans-serif;
+    --nav-font: "Poppins", sans-serif;
+    --background-color: #e4e4e4;
+    --default-color: #000000;
+    --heading-color: #000000;
+    --accent-color: #121212;
+    --contrast-color: #ffffff;
+    --nav-color: #ffffff;
+    --nav-hover-color: #580404;
+    --nav-dropdown-color: #212529;
+    --nav-dropdown-background-color: #ffffff;
+}
+
+.services .service-item h3 {
+    font-weight: 700;
+    margin: 10px 0 15px 0;
+    font-size: 22px;
+}
+
+.services .service-item p {
+    line-height: 24px;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.services .service-item:hover {
+    background: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+.services .service-item:hover .icon {
+    background: var(--contrast-color);
+}
+
+.services .service-item:hover h3,
+.services .service-item:hover p {
+    color: var(--contrast-color);
+}
+
+.services .service-item {
+    box-shadow: 0px 5px 90px 0px rgba(var(--default-color-rgb), 0.1);
+    background-color: var(--contrast-color);
+    padding: 50px 30px;
+    transition: all ease-in-out 0.4s;
+    height: 100%;
+}
+
+.services .service-item:hover {
+    transform: translateY(-10px);
+}
+
+.services .service-item:hover h4 a {
+    color: #ffffff;
+}

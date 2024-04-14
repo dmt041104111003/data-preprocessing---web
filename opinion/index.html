@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Opinion</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/css/main.css" rel="stylesheet">
+    <link href="../assets/css/media.css" rel="stylesheet">
+    <link href="../opinion/css/opinion.css" rel="stylesheet">
+    <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <header id="header" class="header fixed-top">
+        <div class="container d-flex  justify-content-between">
+            <a href="../opinion/opinion.html" class="logo d-flex align-items-center">
+                <h1 class="">data</h1>
+            </a>
+            <nav id="navmenu" class="navmenu">
+                <ul>
+                    <li class="dropdown has-dropdown">
+                        <a href="#"><span>Opinion</span> <i class="bi bi-chevron-down"></i></a>
+                        <ul>
+                            <li><a href="../opinion/opinion.html">Inputting a viewpoint</a></li>
+                            <li><a href="../opinion/history.html">History</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../statistics/statistics.html">Statistics</a></li>
+                    <li class="dropdown has-dropdown"><a href="#"><span>Setting</span> <i class="bi bi-chevron-down"></i></a>
+                        <ul>
+                            <li><a href="#">Dark/Light</a></li>
+                            <li class="dropdown has-dropdown"><a href="#"><span>Language</span> <i class="bi bi-chevron-down"></i></a>
+                                <ul>
+                                    <li><a href="#">Vietnamese</a></li>
+                                    <li><a href="#">English</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+            </nav>
+        </div>
+
+    </header>
+
+    <main class="container-flex">
+
+        <section>
+            <h2 class="section-title">INPUT - OPINION</h2>
+
+            <div class="card">
+                <div class="form-container">
+                    <form class="form">
+                        <div class="group">
+                            <textarea placeholder="" id="opinionMessage" name="comment" rows="5" required=""></textarea>
+                            <label for="comment">Opinion</label>
+                        </div>
+                        <button id="sub">Submit</button>
+                    </form>
+                </div>
+                <div class="result">
+                    <p id="resultText">Result:</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class=" section-title">RESULT</h2>
+            <figure class="highcharts-figure card_chart">
+                <div id="container"></div>
+            </figure>
+        </section>
+    </main>
+    <script src="../assets/vendor/highcharts/highcharts.js"></script>
+    <script src="../assets/vendor/highcharts/highcharts-3d.js"></script>
+    <script src="../assets/vendor/highcharts/exporting.js"></script>
+    <!-- <script src="../assets/vendor/highcharts/export-data.js"></script> -->
+    <!-- <script src="../assets/vendor/highcharts/accessibility.js"></script> -->
+
+
+    <script src="../assets/js/main.js"></script>
+    <script src="../opinion/js/result.js"></script>
+    <script src="../opinion/js/chart_op.js"></script>
+
+</body>
+
+
+</html>
+
+</html>

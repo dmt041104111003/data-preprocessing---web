@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Opinion</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/css/main.css" rel="stylesheet">
+    <link href="../assets/css/media.css" rel="stylesheet">
+    <link href="../opinion/css/history.css" rel="stylesheet">
+    <link href="../opinion/css/export.css" rel="stylesheet">
+    <link href="../opinion/css/chart_detail.css" rel="stylesheet">
+    <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+</head>
+
+<body>
+    <header id="header" class="header fixed-top">
+        <div class="branding">
+            <div class="container position-relative d-flex align-items-center justify-content-between">
+                <a href="../opinion/opinion.html" class="logo d-flex align-items-center">
+                    <h1 class="">data</h1>
+                </a>
+                <nav id="navmenu" class="navmenu">
+                    <ul>
+                        <li class="dropdown has-dropdown">
+                            <a href="#"><span>Opinion</span> <i class="bi bi-chevron-down"></i></a>
+                            <ul>
+                                <li><a href="../opinion/opinion.html">Inputting a viewpoint</a></li>
+                                <li><a href="../opinion/history.html">History</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../statistics/statistics.html">Statistics</a></li>
+                        <li class="dropdown has-dropdown"><a href="#"><span>Setting</span> <i class="bi bi-chevron-down"></i></a>
+                            <ul>
+                                <li><a href="#">Dark/Light</a></li>
+                                <li class="dropdown has-dropdown"><a href="#"><span>Language</span> <i class="bi bi-chevron-down"></i></a>
+                                    <ul>
+                                        <li><a href="#">Vietnamese</a></li>
+                                        <li><a href="#">English</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+                </nav>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+
+        <section>
+            <h2 class=" section-title">HISTORY</h2>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-10">
+                        <div class="download">
+                            <button class="export-btn buttonDownload" data-type="csv">Export CSV</button>
+                            <button class="export-btn buttonDownload" data-type="xls">Export Excel</button>
+                            <button class="export-btn buttonDownload" data-type="png">Export PNG</button>
+                        </div>
+                        <table id="opinionTable" class="table table-bordered text-center">
+                            <thead>
+                                <tr>
+                                    <th>No.</th>
+                                    <th>Opinion</th>
+                                    <th>Label</th>
+                                    <th>Info</th>
+                                    <th>Details</th>
+                                    <th>Delete</th>
+                                </tr>
+                            </thead>
+                            <tbody id="dataTableBody">
+                            </tbody>
+                        </table>
+                        <div class="text-center">
+                            <button id="showMoreOpinionsBtn" class="show-bt">View more</button>
+                            <button id="showLessOpinionsBtn" class="show-bt add">Abbreviate</button>
+                        </div>
+
+                    </div>
+                    <div id="overlay"></div>
+                    <div id="detailTableContainer">
+                        <figure class="highcharts-figure card_chart">
+                            <div id="container"></div>
+                        </figure>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="../assets/js/main.js"></script>
+    <script src="../opinion/js/history.js"></script>
+    <!-- <script src="../opinion/js/chart_detail.js"></script> -->
+
+    <script src="../assets/vendor/highcharts/highcharts.js"></script>
+    <script src="../assets/vendor/highcharts/highcharts-3d.js"></script>
+    <script src="../assets/vendor/highcharts/exporting.js"></script>
+    <script src="../assets/vendor/highcharts/export-data.js"></script>
+    <script src="../assets/vendor/highcharts/accessibility.js"></script>
+
+
+</body>
+
+
+</html>
