@@ -73,19 +73,20 @@ const chart = Highcharts.chart('container', {
 });
 
 const labelColors = {
-    'Vấn đề khác': '#FF0000', // Màu đỏ
-    'Học tập': '#0000FF', // Màu xanh dương
-    'Thi cử': '#00FF00', // Màu xanh lá cây
-    'Ký túc xá': '#FFFF00', // Màu vàng
-    'Học phí, bảo hiểm y tế': '#800080', // Màu tím
-    'Cơ sở vật chất và hạ tầng': '#FFA500', // Màu cam
-    'Chất lượng đào tạo': '#FFC0CB', // Màu hồng
-    'Hoạt động ngoại khoá': '#A52A2A', // Màu nâu
-    'Nghiên cứu khoa học và hợp tác ứng dụng': '#808080', // Màu xám
-    'Thư viện': '#000000', // Màu đen
-    'An ninh': '#FFFFFF', // Màu trắng
-    'Học bổng và chính sách hỗ trợ': '#FFE4B5' // Màu màu da
+    'Vấn đề khác': '#FF6347', // Màu đỏ đậm
+    'Học tập': '#4169E1', // Màu xanh dương đậm
+    'Thi cử': '#32CD32', // Màu xanh lá cây đậm
+    'Ký túc xá': '#FFD700', // Màu vàng đậm
+    'Học phí, bảo hiểm y tế': '#9932CC', // Màu tím đậm
+    'Cơ sở vật chất và hạ tầng': '#FF8C00', // Màu cam đậm
+    'Chất lượng đào tạo': '#FF69B4', // Màu hồng đậm
+    'Hoạt động ngoại khoá': '#8B4513', // Màu nâu đậm
+    'Nghiên cứu khoa học và hợp tác ứng dụng': '#A9A9A9', // Màu xám đậm
+    'Thư viện': '#2F4F4F', // Màu xanh đậm
+    'An ninh': '#F5F5F5', // Màu xám nhạt
+    'Học bổng và chính sách hỗ trợ': '#FFDEAD' // Màu màu da nhạt
 };
+
 
 chart.series[0].points.forEach(point => {
     const label = point.name;
@@ -124,18 +125,18 @@ document.getElementById('sub').addEventListener('click', function(e) {
 
         chart.series[0].setData(data);
         const labelColors = {
-            'Vấn đề khác': '#FF0000', // Màu đỏ
-            'Học tập': '#0000FF', // Màu xanh dương
-            'Thi cử': '#00FF00', // Màu xanh lá cây
-            'Ký túc xá': '#FFFF00', // Màu vàng
-            'Học phí, bảo hiểm y tế': '#800080', // Màu tím
-            'Cơ sở vật chất và hạ tầng': '#FFA500', // Màu cam
-            'Chất lượng đào tạo': '#FFC0CB', // Màu hồng
-            'Hoạt động ngoại khoá': '#A52A2A', // Màu nâu
-            'Nghiên cứu khoa học và hợp tác ứng dụng': '#808080', // Màu xám
-            'Thư viện': '#000000', // Màu đen
-            'An ninh': '#FFFFFF', // Màu trắng
-            'Học bổng và chính sách hỗ trợ': '#FFE4B5' // Màu màu da
+            'Vấn đề khác': '#FF6347', // Màu đỏ đậm
+            'Học tập': '#4169E1', // Màu xanh dương đậm
+            'Thi cử': '#32CD32', // Màu xanh lá cây đậm
+            'Ký túc xá': '#FFD700', // Màu vàng đậm
+            'Học phí, bảo hiểm y tế': '#9932CC', // Màu tím đậm
+            'Cơ sở vật chất và hạ tầng': '#FF8C00', // Màu cam đậm
+            'Chất lượng đào tạo': '#FF69B4', // Màu hồng đậm
+            'Hoạt động ngoại khoá': '#8B4513', // Màu nâu đậm
+            'Nghiên cứu khoa học và hợp tác ứng dụng': '#A9A9A9', // Màu xám đậm
+            'Thư viện': '#2F4F4F', // Màu xanh đậm
+            'An ninh': '#F5F5F5', // Màu xám nhạt
+            'Học bổng và chính sách hỗ trợ': '#FFDEAD' // Màu màu da nhạt
         };
 
         chart.series[0].points.forEach(point => {
