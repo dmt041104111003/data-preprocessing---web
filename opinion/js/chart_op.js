@@ -74,8 +74,7 @@ const chart = Highcharts.chart('container', {
 
 const labelColors = {
     'Vấn đề khác': '#FF6347', // Màu đỏ đậm
-    'Học tập': '#4169E1', // Màu xanh dương đậm
-    'Thi cử': '#32CD32', // Màu xanh lá cây đậm
+    'Học tập và thi cử': '#4169E1', // Màu xanh dương đậm
     'Ký túc xá': '#FFD700', // Màu vàng đậm
     'Học phí, bảo hiểm y tế': '#9932CC', // Màu tím đậm
     'Cơ sở vật chất và hạ tầng': '#FF8C00', // Màu cam đậm
@@ -104,8 +103,7 @@ document.getElementById('sub').addEventListener('click', function(e) {
     const opinionMessage = document.getElementById('opinionMessage').value.trim();
     const keywordData = [
         ['Vấn đề khác', ['a']],
-        ['Học tập', ['học tập', 'học kỳ', 'bài tập', 'giảng đường']],
-        ['Thi cử', ['thi cử', 'kỳ thi', 'điểm số', 'bảng điểm']],
+        ['Học tập và thi cử', ['học tập', 'học kỳ', 'bài tập', 'giảng đường', 'thi cử', 'kỳ thi', 'điểm số', 'bảng điểm']],
         ['Ký túc xá', ['ký túc xá', 'phòng ở', 'khu ký túc', 'chỗ ở']],
         ['Học phí, bảo hiểm y tế', ['học phí', 'bảo hiểm y tế', 'chi phí']],
         ['Cơ sở vật chất và hạ tầng', ['cơ sở vật chất', 'hạ tầng', 'phòng học', 'thiết bị']],
@@ -126,8 +124,7 @@ document.getElementById('sub').addEventListener('click', function(e) {
         chart.series[0].setData(data);
         const labelColors = {
             'Vấn đề khác': '#FF6347', // Màu đỏ đậm
-            'Học tập': '#4169E1', // Màu xanh dương đậm
-            'Thi cử': '#32CD32', // Màu xanh lá cây đậm
+            'Học tập và thi cử': '#4169E1', // Màu xanh dương đậm
             'Ký túc xá': '#FFD700', // Màu vàng đậm
             'Học phí, bảo hiểm y tế': '#9932CC', // Màu tím đậm
             'Cơ sở vật chất và hạ tầng': '#FF8C00', // Màu cam đậm

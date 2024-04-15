@@ -45,8 +45,7 @@ document.addEventListener("DOMContentLoaded", function() {
         opinion = opinion.toLowerCase();
         const keywordLabels = {
             "Vấn đề khác": [],
-            "Học tập": ["học tập", "học kỳ", "bài tập", "giảng đường"],
-            "Thi cử": ["thi cử", "kỳ thi", "điểm số", "bảng điểm"],
+            "Học tập và thi cử": ["học tập", "học kỳ", "bài tập", "giảng đường", "thi cử", "kỳ thi", "điểm số", "bảng điểm"],
             "Ký túc xá": ["ký túc xá", "phòng ở", "khu ký túc", "chỗ ở"],
             "Học phí, bảo hiểm y tế": ["học phí", "bảo hiểm y tế", "chi phí"],
             "Cơ sở vật chất và hạ tầng": ["cơ sở vật chất", "hạ tầng", "phòng học", "thiết bị"],

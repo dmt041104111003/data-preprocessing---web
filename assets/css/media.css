@@ -284,29 +284,12 @@
     }
 }
 
-@keyframes subscription-loading {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-@keyframes animate-loading {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
 
 /* form opinion */
 
 @media (max-width: 768px) {
-    .card {
+    .card,
+    .card-chart {
         padding: 40px;
         width: 90%;
     }
