@@ -17,8 +17,7 @@ function countKeywordOccurrences(sentence, keywordData) {
 // Biểu đồ ban đầu
 const initialData = [
     ['Vấn đề khác', 0],
-    ['Học tập', 0],
-    ['Thi cử', 0],
+    ['Học tập và thi cử', 0],
     ['Ký túc xá', 0],
     ['Học phí, bảo hiểm y tế', 0],
     ['Cơ sở vật chất và hạ tầng', 0],
